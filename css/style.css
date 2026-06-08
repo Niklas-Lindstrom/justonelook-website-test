@@ -47,6 +47,7 @@ body {
     color: #000;
     margin-bottom: 5px;
     font-weight: normal;
+    letter-spacing: -0.5px;
 }
 
 .tagline {
@@ -73,10 +74,16 @@ body {
     color: #0066cc;
     text-decoration: underline;
     font-size: 0.95em;
+    transition: color 0.2s ease;
 }
 
 .nav a:hover {
     color: #004499;
+}
+
+.nav a:focus {
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
 }
 
 /* Main Content */
@@ -94,6 +101,7 @@ h2 {
     margin-bottom: 20px;
     color: #000;
     font-weight: bold;
+    letter-spacing: -0.5px;
 }
 
 h3 {
@@ -114,10 +122,16 @@ p {
 a {
     color: #0066cc;
     text-decoration: underline;
+    transition: color 0.2s ease;
 }
 
 a:hover {
     color: #004499;
+}
+
+a:focus {
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
 }
 
 /* Hero Section */
@@ -146,11 +160,17 @@ a:hover {
     text-decoration: none;
     font-weight: bold;
     margin-top: 10px;
+    transition: background-color 0.2s ease;
 }
 
 .cta-button:hover {
     background-color: #004499;
     color: white;
+}
+
+.cta-button:focus {
+    outline: 2px solid #004499;
+    outline-offset: 2px;
 }
 
 /* Method Section */
@@ -196,6 +216,38 @@ a:hover {
 .info-content p {
     margin-bottom: 15px;
     text-align: justify;
+}
+
+/* FAQ Section */
+#faq {
+    background-color: white;
+    padding: 20px;
+    border-left: 3px solid #999;
+}
+
+.faq-container {
+    margin-top: 20px;
+}
+
+.faq-item {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-item h3 {
+    margin-top: 0;
+    font-size: 1.05em;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 0.95em;
+    margin: 0;
 }
 
 /* Testimonials Section */
@@ -313,6 +365,13 @@ a:hover {
     font-size: 0.95em;
     flex: 1;
     min-width: 200px;
+    transition: border-color 0.2s ease;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    border-color: #0066cc;
+    background-color: #fafafa;
 }
 
 .newsletter-form button {
@@ -324,10 +383,16 @@ a:hover {
     font-weight: bold;
     cursor: pointer;
     font-size: 0.95em;
+    transition: background-color 0.2s ease;
 }
 
 .newsletter-form button:hover {
     background-color: #004499;
+}
+
+.newsletter-form button:focus {
+    outline: 2px solid #004499;
+    outline-offset: 2px;
 }
 
 /* Contact Section */
@@ -367,6 +432,7 @@ a:hover {
     font-family: Arial, sans-serif;
     font-size: 0.95em;
     color: #333;
+    transition: border-color 0.2s ease;
 }
 
 .form-group input:focus,
@@ -385,10 +451,16 @@ a:hover {
     font-weight: bold;
     cursor: pointer;
     font-size: 0.95em;
+    transition: background-color 0.2s ease;
 }
 
 .submit-btn:hover {
     background-color: #004499;
+}
+
+.submit-btn:focus {
+    outline: 2px solid #004499;
+    outline-offset: 2px;
 }
 
 /* Footer */
@@ -425,10 +497,16 @@ a:hover {
 .footer-section a {
     color: #0066cc;
     text-decoration: underline;
+    transition: color 0.2s ease;
 }
 
 .footer-section a:hover {
     color: #004499;
+}
+
+.footer-section a:focus {
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
 }
 
 .footer-bottom {
@@ -508,7 +586,8 @@ a:hover {
     .testimonials,
     .articles,
     .newsletter,
-    .contact {
+    .contact,
+    #faq {
         padding: 15px;
     }
 }
